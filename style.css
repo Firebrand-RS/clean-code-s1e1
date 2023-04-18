@@ -13,7 +13,7 @@ body {
 .headline-promo img {
   width: 100%;
 }
-.headline-promo .more-inf {
+.headline-promo .more-info {
   font-family: fantasy, cursive;
 }
 
@@ -26,7 +26,8 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task-label,
+.task-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1
