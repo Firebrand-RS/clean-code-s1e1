@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.headline-promo-image {
+.headline-promo__image {
   width: 100%;
 }
 
@@ -34,14 +34,14 @@
   margin: 0 auto 0;
 }
 
-.task-label,
-.task-text {
+.task-item__label,
+.task-item__text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.todo-app__row-wrapper {
   display: flex;
 }
 
@@ -60,7 +60,7 @@ button {
   outline: none;
 }
 
-button {
+.task-item__button {
   background: none;
   border: 0px;
   color: #888;
@@ -70,12 +70,12 @@ button {
   cursor: pointer;
 }
 
-.field-button:hover {
+.task-item__button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-.field-header {
+.todo-app__section-header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +85,7 @@ button {
   text-transform: uppercase;
 }
 
-.task-text {
+.task-item__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,18 +98,18 @@ button {
   color: #888;
 }
 
-.task-text:focus {
+.task-item__text:focus {
   color: #333;
 }
 
 /* New Task */
-.task-text {
+.task-item__text  {
   width: 318px;
 }
 
 /* Task list */
-.task-item,
-.task-row-wrapper {
+.todo-app__task-item,
+.todo-app__row-wrapper {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -119,52 +119,52 @@ button {
   align-items: center;
 }
 
-.task-item > * {
+.todo-app__task-item > * {
   vertical-align: middle;
 }
 
-.task-checkbox {
+.task-item__checkbox {
   margin: 0 10px;
 }
 
-.task-label {
+.task-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-text {
+.task-item__text {
   width: 226px;
 }
 
-.button-image {
+.button__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-image:hover {
+.button__image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-tasks .task-label {
+.todo-app__completed-tasks .task-item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-item .task-text {
+.todo-app__task-item .task-item__text {
   display: none;
 }
 
-.edit-mode .task-text {
+.todo-app__task-item--edit-mode .task-item__text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task-label {
+.todo-app__task-item--edit-mode .task-item__label {
   display: none;
 }
 

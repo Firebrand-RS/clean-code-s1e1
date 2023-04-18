@@ -7,54 +7,54 @@
     <meta charset="utf-8">
   </head>
   <body class="page">
-    <header>
+    <header class="page__header">
       <h1 class="visually-hidden">TODO-single-page-application</h1>
     </header>
-    <main>
+    <main class="page__content">
       <article class="todo-app">
-        <header class="todo-app-header">
-          <div class="headline-promo">
-            <img class="headline-promo-image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix. How to make Decisions.">
-            <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-          </div>
-          <h2 class="visually-hidden">TODO-list</h2>
-        </header>
         <div class="page-wrapper">
-          <section class="app-section">
-            <h3 class="field-header">Add Item</h3>
-            <div class="task-row-wrapper">
-              <input class="task-text" id="new-task" type="text">
-              <button class="field-button">Add</button>
+          <header class="todo-app-header">
+            <h2 class="todo-app__title visually-hidden">TODO-list</h2>
+            <div class="todo-app__headline-promo headline-promo">
+              <img class="headline-promo__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix. How to make Decisions.">
+              <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+            </div>
+          </header>
+          <section class="todo-app__section">
+            <h3 class="todo-app__section-header">Add Item</h3>
+            <div class="todo-app__row-wrapper task-item">
+              <input class="task-item__text" id="new-task" type="text">
+              <button class="task-item__button button">Add</button>
             </div>
           </section>
-          <section class="app-section">
-            <h3 class="field-header">Todo</h3>
-            <ul class ="incomplete-tasks-list" id="incomplete-tasks">
-              <li class="task-item incomplete-tasks-item">
-                <input class="task-checkbox" type="checkbox">
-                <label class="task-label">Pay Bills</label>
-                <input class="task-text" type="text">
-                <button class="field-button edit">Edit</button>
-                <button class="field-button delete"><img class="button-image" src="./remove.svg" alt="" aria-hidden="true"></button>
+          <section class="todo-app__section">
+            <h3 class="todo-app__section-header">Todo</h3>
+            <ul class ="todo-app__incomplete-tasks-list" id="incomplete-tasks">
+              <li class="todo-app__task-item task-item">
+                <input class="task-item__checkbox" type="checkbox">
+                <label class="task-item__label">Pay Bills</label>
+                <input class="task-item__text" type="text">
+                <button class="task-item__button task-item__button--edit button">Edit</button>
+                <button class="task-item__button task-item__button--delete button"><img class="button__image" src="./remove.svg" alt="" aria-hidden="true"></button>
               </li>
-              <li class="task-item incomplete-tasks-item edit-mode">
-                <input class="task-checkbox" type="checkbox">
-                <label class="task-label">Go Shopping</label>
-                <input class="task-text" type="text" value="Go Shopping">
-                <button class="field-button edit">Save</button>
-                <button class="field-button delete"><img class="button-image" src="./remove.svg" alt="" aria-hidden="true"></button>
+              <li class="todo-app__task-item todo-app__task-item--edit-mode task-item">
+                <input class="task-item__checkbox" type="checkbox">
+                <label class="task-item__label">Go Shopping</label>
+                <input class="task-item__text" type="text" value="Go Shopping">
+                <button class="task-item__button task-item__button--edit button">Save</button>
+                <button class="task-item__button task-item__button--delete button"><img class="button__image" src="./remove.svg" alt="" aria-hidden="true"></button>
               </li>
             </ul>
           </section>
-          <section class="app-section">
-            <h3 class="field-header">Completed</h3>
-            <ul class="completed-tasks" id="completed-tasks">
-              <li class="task-item completed-tasks-item">
-                <input class="task-checkbox" type="checkbox" checked>
-                <label class="task-label">See the Doctor</label>
-                <input class="task-text" type="text">
-                <button class="field-button edit">Edit</button>
-                <button class="field-button delete"><img class="button-image" src="./remove.svg" alt="" aria-hidden="true"></button>
+          <section class="todo-app__section">
+            <h3 class="todo-app__section-header">Completed</h3>
+            <ul class="todo-app__completed-tasks" id="completed-tasks">
+              <li class="todo-app__task-item task-item">
+                <input class="task-item__checkbox" type="checkbox" checked>
+                <label class="task-item__label">See the Doctor</label>
+                <input class="task-item__text" type="text">
+                <button class="task-item__button task-item__button--edit button">Edit</button>
+                <button class="task-item__button task-item__button--delete button"><img class="button__image" src="./remove.svg" alt="" aria-hidden="true"></button>
               </li>
             </ul>
           </section>
