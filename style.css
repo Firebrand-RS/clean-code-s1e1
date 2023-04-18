@@ -4,47 +4,60 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .headline-promo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .headline-promo-image {
   width: 100%;
 }
+
 .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .headline-promo { text-align: center;
+
+  .headline-promo {
+    text-align: center;
+  }
+
 }
-}
+
 .page-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task-label,
 .task-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-row-wrapper {
   display: flex;
 }
+
 ul {
   margin:0;
   padding: 0px;
 }
+
 li, h3 {
   list-style:none;
 }
+
 input,button{
   outline:none;
 }
+
 button {
   background: none;
   border: 0px;
@@ -54,9 +67,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .field-button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .field-header {
   color: #333;
@@ -67,6 +82,7 @@ button {
   margin: 0;
   text-transform: uppercase;
 }
+
 .task-text {
   margin: 0;
   font-size: 18px;
@@ -79,6 +95,7 @@ button {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task-text:focus {
   color: #333;
 }
@@ -99,6 +116,7 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+
 .task-item > * {
   vertical-align: middle;
 }
@@ -106,20 +124,24 @@ button {
 .task-checkbox {
   margin: 0 10px;
 }
+
 .task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task-text {
   width: 226px
 }
+
 .button-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .button-image:hover {
   transform: rotateZ(0);
 }
